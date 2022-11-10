@@ -13,3 +13,8 @@ def hello_world():
 @app.route('/sum/<int:num1>/<int:num2>', methods=['GET'])
 def sum(num1, num2):
     return str(num1 + num2)
+
+
+# run this server on port 5000
+if __name__ == '__main__':
+    app.run(port=5000)
